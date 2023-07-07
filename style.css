@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+
+body{
+    background-color:  hsl(235, 18%, 26%);
+}
+
+
+.desktop-page{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.mobile-img{
+    display: none;
+}
+
+.main{
+    background-color: hsl(0, 0%, 100%);
+    width: 650px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.prghs-with-logo{
+    display: flex;
+    flex-direction: row;
+}
+
+.prghs-with-logo img{
+    margin-right: 10px;
+}
+
+.email{
+    font-weight: 700;
+}
+
+input{
+    color: hsl(231, 7%, 60%);
+    padding: 10px;
+    width: 250px;
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 5px;
+}
+.sbscrb-btn{
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+    width: 270px;
+    background-color: hsl(234, 29%, 20%);
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.page-heading{
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+
+.sbscrb-btn:hover{
+    background-color: hsl(4, 100%, 67%);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px){
+
+    body{
+        width: auto;
+        height: auto;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .desktop-page{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    .desktop-img{
+        display: none;
+    }
+
+    .mobile-img{
+        display: block;
+        margin-top: -20px;
+    }
+
+    .main{
+        width: 320px;
+        display: flex;
+        flex-direction: column-reverse;
+        border-radius: 0;
+        padding: 0;
+        margin-top: 0;
+        gap: 0px;
+    }
+
+    .desktop-dscrpn{
+        margin-left: 20px;
+    }
+
+    .sbscrb-btn{
+        width: 235px;
+        padding: 10px;
+    }
+
+    input{
+        width: 220px;
+    }
+
+}
+
+    
